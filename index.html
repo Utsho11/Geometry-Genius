@@ -15,7 +15,7 @@
                 <h3>Interactive</h3>
                 <p class="text-secondary-emphasis">Geometry Genius</p>
               </div>
-                  <button class="btn btn-outline-primary" type="submit">Blog</button>
+                  <button id="blog-btn" class="btn btn-outline-primary" type="submit">Blog</button>
               </div>
             </div>
           </nav>
@@ -28,10 +28,10 @@
                   <div class="card h-100 p-2">
                     <img src="images/triangle.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Triangle</h5>
+                      <h5 id="first-item-name" class="card-title">Triangle</h5>
                       <p class="card-text">Area (A) = .5 x b x h</p>
-                      <p><input class="input-field" type="text" placeholder="b"> cm <input class="input-field" type="text" placeholder="h"> cm</p>
-                      <button class="btn btn-primary">calculate</button>
+                      <p><input id="triangle-base" class="input-field" type="text" placeholder="b"> cm <input id="triangle-height" class="input-field" type="text" placeholder="h"> cm</p>
+                      <button id="triangle-btn" class="btn btn-primary">calculate</button>
                     </div>
                   </div>
                 </div>
@@ -39,10 +39,10 @@
                   <div class="card h-100 p-2">
                     <img src="images/rectangle.png" class="card-img-top">
                     <div class="card-body">
-                      <h5 class="card-title">Rectangle</h5>
+                      <h5 id="second-item-name" class="card-title">Rectangle</h5>
                       <p class="card-text">Area (A) = w x l</p>
-                      <p><input class="input-field" type="text" placeholder="w"> cm <input class="input-field" type="text" placeholder="l"> cm</p>
-                      <button class="btn btn-primary">calculate</button>
+                      <p><input id="rectangle-width" class="input-field" type="text" placeholder="w"> cm <input id="rectangle-length" class="input-field" type="text" placeholder="l"> cm</p>
+                      <button id="rectangle-btn" class="btn btn-primary">calculate</button>
                     </div>
                   </div>
                 </div>
@@ -50,18 +50,23 @@
                   <div class="card h-100 p-2">
                     <img src="images/parallelogram.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Parallelogram</h5>
+                      <h5 id="third-item-name" class="card-title">Parallelogram</h5>
                       <p class="card-text">Area (A) = b x h</p>
-                      <p><input class="input-field" type="text" placeholder="b"> cm <input class="input-field" type="text" placeholder="h"> cm</p>
-                      <button class="btn btn-primary">calculate</button>
+                      <p><input id="parallelogram-base" class="input-field" type="text" placeholder="b"> cm <input id="parallelogram-height" class="input-field" type="text" placeholder="h"> cm</p>
+                      <button id="parallelogram-btn" class="btn btn-primary">calculate</button>
                     </div>
                   </div>
                 </div>
               </div></div>
               <div class="col-4"><div class="col">
-                <div class="card p-3">
-                    <h5 class="card-title" style="text-decoration: underline;height: 260px;">Area calculation</h5>
-                    <p class="card-text"></p>
+                <div style="height: 300px;" class="card p-3">
+                    <h5 class="card-title" style="text-decoration: underline;">Area calculation</h5>
+                    <table class="table w-full">
+                       
+                        <tbody id="table-container">
+
+                        </tbody>
+                    </table>
                   </div>
                 </div>
               </div></div>
@@ -74,10 +79,10 @@
                   <div class="card h-100 p-2">
                     <img src="images/rhombus.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Rhombus</h5>
+                      <h5 id="forth-item-name" class="card-title">Rhombus</h5>
                       <p class="card-text">Area (A) = .5 x d<sub>1</sub> x d<sub>2</sub></p>
-                      <p><input class="input-field" type="text" placeholder="d1"> cm <input class="input-field" type="text" placeholder="d2"> cm</p>
-                      <button class="btn btn-primary">calculate</button>
+                      <p><input id="rhombus-d1" class="input-field" type="text" placeholder="d1"> cm <input id="rhombus-d2" class="input-field" type="text" placeholder="d2"> cm</p>
+                      <button id="rhombus-btn" class="btn btn-primary">calculate</button>
                     </div>
                   </div>
                 </div>
