@@ -3,3 +3,7 @@
     background-color: lightgrey;
     border: none;
 }
+.card-img-top{
+    width: 200px;
+    height: 100px;
+}
